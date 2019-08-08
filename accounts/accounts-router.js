@@ -4,7 +4,7 @@ const db = require('../data/dbConfig.js');
 
 const router = express.Router();
 
-router.get('/', async (req, res) => {       // Pre-existing data in accounts table not returning.
+router.get('/', async (req, res) => {
     try {
         const accounts = await
         db('accounts');
